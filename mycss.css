@@ -1,0 +1,110 @@
+/* 
+Custom Stylesheet | Designed by Dev
+*/
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #DDDBF1;
+}
+
+main {
+    flex: 1 0 auto;
+    margin-bottom: 7px;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/* 
+Insert Comment 
+*/
+.brand-logo {
+    font-family: "Arial Black", Gadget, sans-serif !important;
+}
+
+nav {
+    background-color: #38618c !important;
+}
+nav .btn {
+    background: #ff5964 !important;
+}
+
+.card-title {
+    color: #888888 !important;
+    font-weight: 350 !important;
+}
+.box{
+    background: #ff5964;
+}
+.join-btn{
+    background: #ffe74c !important;
+    margin-bottom: 20px;
+    color: #38618c;
+}
+footer{
+    background-color: #38618c !important;
+}
+.border1{
+    border: solid 2px;
+    border-color: #38618c;
+}
+.border2{
+    border: solid 2px;
+    border-color: #ffe74c;
+}
+.border3{
+    border: solid 2px;
+    border-color: #ff5964;
+}
+.border4{
+    border: solid 2px;
+    border-color: #061A40;
+}
+.heading{
+    margin-left: 10px;
+}
+/* 
+Insert Comment 
+*/
+.img-hover-zoom {
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.5);
+}
+
+/* 
+Insert Comment 
+*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* 
+Insert Comment 
+*/
