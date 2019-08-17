@@ -1,0 +1,88 @@
+/* 
+Custom Stylesheet | Designed by Dev
+*/
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+body {
+    font-size: 1rem;
+}
+/* 
+Insert Comment 
+*/
+.container {
+    max-width: 95%;
+}
+.fa-dice-five{
+    margin-right: 10px;
+}
+.top-bar {
+    text-align: center;
+    font-size: 0.7rem;
+}
+.top-bar ul{
+    padding-bottom: 0px;
+    padding-top: 3px;
+    margin-bottom: 3px;
+}
+.top-bar a {
+    color: #B9DFF4;
+    padding: 10px;
+    text-decoration: none;
+}
+.top-hr{
+    margin: 0px;
+}
+.navbar {
+    padding: 15px !important;
+}
+.navbar-brand{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    font-size: 2rem !important;
+}
+.brand-img{
+    margin-right: 5px !important;
+}
+/* 
+Insert Comment 
+*/
+.content-section {
+  min-height: 2000px;
+}
+.menu{
+    position: fixed;
+    width: 20%;
+    border: solid 1px;
+    border-color: #A9A9A9;
+    border-radius: 2px;
+}
+.list-group-item a{
+    color: #696969;
+    text-decoration: none;
+}
+.list-group-item i{
+    color: #696969 !important;
+}
+.dropdown-header{
+    font-family: 'Nunito' , sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    background: #f4f4f4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* 
+Insert Comment 
+*/
