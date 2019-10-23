@@ -16,16 +16,17 @@ html {
 body {
     font-size: 1rem;
 }
-/*Nav*/
 .container {
     max-width: 95%;
 }
+/*Nav*/
 .fa-dice-five{
     margin-right: 10px;
 }
 .top-bar {
     text-align: center;
     font-size: 0.7rem;
+    background: #3ecf8e;
 }
 .top-bar ul{
     padding-bottom: 0px;
@@ -33,7 +34,7 @@ body {
     margin-bottom: 3px;
 }
 .top-bar a {
-    color: #B9DFF4;
+    color: #cfe9db;
     padding: 10px;
     text-decoration: none;
     }
@@ -45,9 +46,10 @@ body {
 }
 .navbar {
     padding: 15px !important;
+    background: #3ECF8E;
 }
 .navbar-brand{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bolder;
     font-size: 1.5rem !important;
     letter-spacing: 1.5px;
@@ -57,7 +59,7 @@ body {
 }
 .navbar button{
     letter-spacing: 1px;
-    font-family: 'Nunito',sans-serif;
+    font-family: 'Roboto',sans-serif;
 }
 /*Nav*/
 /* ---------------------------------------------------
@@ -70,7 +72,7 @@ body {
     left: -250px;
     height: 100vh;
     z-index: 9999;
-    color: #ffffff;
+    color: #3ecf8e;
     transition: all 0.3s;
     overflow-y: scroll;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -94,9 +96,8 @@ body {
 .overlay {
     display: none;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
     z-index: 998;
     opacity: 0;
     transition: all 0.5s ease-in-out;
@@ -107,17 +108,18 @@ body {
 }
 #sidebar .sidebar-header {
     padding: 20px;
-    font-family: 'Nunito' , sans-serif;
+    font-family: 'Roboto' , sans-serif;
 }
 #sidebar ul.components {
     padding: 1px;
-    border-bottom: 1px solid #f4f4f4;
 }
 #sidebar ul p {
-    color: #fff;
+    color: #3ecf8e;
     padding: 5px;
     padding-left: 10px;
     font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 #sidebar ul li a {
     padding: 10px;
@@ -125,17 +127,14 @@ body {
     font-size: 1em;
     display: block;
     text-decoration: none;
-    color: #ffffff;
-    
+    color: #3ecf8e;
 }
 #sidebar ul li a:hover {
-    color: #0d47a1;
-    background: #ffffff;
+    background: #cfe9db;
 }
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #ffffff;
-    background: #0d47a1;
+    background: #cfe9db;
 }
 a[data-toggle="collapse"] {
     position: relative;
@@ -143,7 +142,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #0d47a1;
+    background: #e7e7e7;
 }
 ul.CTAs {
     padding: 20px;
@@ -156,23 +155,33 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 a.download {
-    background: ;
-    border: 1px solid #ffffff;
+    border: 1px solid #3ecf8e;
 }
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
 #content {
     width: 100%;
-    min-height: 400vh;
+    height: 100%;
     transition: all 0.3s;
     position: absolute;
     top: 0;
     right: 0;
 }
+.mainbody{
+    padding-top: 20px;
+    height: 999px;
+}
+.carousel-item{
+    max-height: 400px;
+} 
+.card-img-top{
+    
+}
 /*
 carousel 
 */
+
 /* 
 carousel 
 */
