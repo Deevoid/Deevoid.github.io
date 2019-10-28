@@ -35,9 +35,6 @@ body {
 main{
     flex: 1 0 auto;
 }
-.container {
-   
-}
 a,a:hover{
     text-decoration: none;
 }
@@ -80,7 +77,7 @@ footer{
 }
 #foot-1,#foot-2 p{
     color: #e7e7e7;
-    margin-bottom: 0;
+    margin-bottom: 3px;
 }
 #foot-2 a,a:hover{
     text-decoration: none;
