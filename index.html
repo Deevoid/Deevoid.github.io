@@ -22,41 +22,76 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div id="wrapper">
-        <!-- NAVABAR-->
-        <nav class="navbar sticky-top navbar-expand-lg">
-            <a class="navbar-a" href="#" onclick="myf()"><i class="fas fa-stream"></i></a>
-            <a class="navbar-brand mx-auto" href="#">Fantastic<span class="dice"><i class="fas fa-spin fa-dice-five"></i></span>Five</a>
-            <a class="navbar-a" href="#"><i class="fas fa-search"></i></a>
-        </nav>
-        <!-- NAVABAR-->
-        <!-- SIDEBAR-->
-        <nav id="sidebar" class="disable-scrollbars">
-            <div class="sidebar-header text-center">
-                <h3 class="font-weight-bold">Be Fantastic !</h3>
+<body class="d-flex flex-column">
+    <header>
+        <div id="wrapper">
+            <!-- NAVABAR-->
+            <nav class="navbar sticky-top navbar-expand-lg">
+                <a class="navbar-a" href="#" onclick="myf()"><i class="fas fa-stream"></i></a>
+                <a class="navbar-brand mx-auto" href="#">Fantastic<span class="dice"><i class="fas fa-spin fa-dice-five"></i></span>Five</a>
+                <a class="navbar-a" href="#"><i class="fas fa-search"></i></a>
+            </nav>
+            <!-- NAVABAR-->
+            <!-- SIDEBAR-->
+            <nav id="sidebar" class="disable-scrollbars">
+                <div class="sidebar-header text-center">
+                    <h3 class="font-weight-bold">Be Fantastic !</h3>
+                </div>
+                <ul class="navbar-nav flex-column pt-1">
+                    <li class="side-item"><a class="pl-4" href="#">TOP REVIEWS<i class="fas fa-star pl-1 text-warning"></i></a></li>
+                    <li class="side-item"><a class="pl-4" href="#">FASHION</a></li>
+                    <li class="side-item"><a class="pl-4" href="#">ELECTRONICS</a></li>
+                    <li class="side-item"><a class="pl-4" href="#">FITNESS</a></li>
+                    <li class="side-item"><a class="pl-4" href="#">HOME & DECOR</a></li>
+                    <li class="side-item"><a class="pl-4" href="#">GIFT GUIDES</a></li>
+                    <li class="side-item"><a class="pl-4" href="#">OFFERS</a></li>
+                </ul>
+                <div class="side-work">
+                    <button type="button" class="btn btn-outline-dark btn-lg btn-block">Work with us <i class="fas fa-pen-alt"></i></button>
+                </div>
+            </nav>
+            <!-- SIDEBAR-->
+        </div>
+        <!-- OVERLAY -->
+        <div id="overlay" class="" onclick="myf()"></div>
+        <!-- OVERLAY -->
+    </header>
+    <main>
+        <div class="main"></div>
+    </main>
+    <footer id="sticky-footer" class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md" id="foot-1">
+                    <div>
+                         <a class="navbar-brand mx-auto" href="#">Fantastic<span class="dice"><i class="fas fa-spin fa-dice-five"></i></span>Five</a>
+                    </div>
+                    <div class="py-2">
+                        <h5 class="foot-h5 font-weight-bold">Be Fantastic Buy Fantanstic!</h5>
+                        <p>Your one stop destination for better buying decisions.</p>
+                    </div>
+                </div>
+                <div class="col-md" id="foot-2">
+                    <div class="float-md-right">
+                       <h5 class="font-weight-bold">Who we are<i class="fas pl-2 fa-check-circle"></i></h5>
+                       <p><a href="#">About us</a> </p>
+                       <p><a href="#">Contact us</a> </p>
+                       <p><a href="#">Sitemap</a> </p>
+                       <p><a href="#">Privacy Policy</a> </p>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <div class="copyright text-center">
+                <p class="mb-0 py-1"> &copy; Fantastic Five &#124; Made with<a href="#" class="px-1 text-danger copy-heart"><i class="fas fa-heart"></i></a>and<a href="#" class="px-1 text-secondary copy-mug"><i class="fas fa-coffee"></i></a></p>
             </div>
-            <ul class="navbar-nav flex-column pt-1">
-                <li class="side-item"><a class="pl-4" href="#">TOP REVIEWS<i class="fas fa-star pl-1 text-warning"></i></a></li>
-                <li class="side-item"><a class="pl-4" href="#">FASHION</a></li>
-                <li class="side-item"><a class="pl-4" href="#">ELECTRONICS</a></li>
-                <li class="side-item"><a class="pl-4" href="#">FITNESS</a></li>
-                <li class="side-item"><a class="pl-4" href="#">HOME & DECOR</a></li>
-                <li class="side-item"><a class="pl-4" href="#">GIFT GUIDES</a></li>
-                <li class="side-item"><a class="pl-4" href="#">OFFERS</a></li>
-            </ul>
-            <div class="side-work">
-                <button type="button" class="btn btn-outline-dark btn-lg btn-block">Work with us <i class="fas fa-pen-alt"></i></button>
-            </div>
-        </nav>
-        <!-- SIDEBAR-->
-    </div>
-    <!-- OVERLAY -->
-    <div id="overlay" class="" onclick="myf()"></div>
-    <!-- OVERLAY -->
+    </footer>
+
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
-</body></html>
+</body>
+
+</html>

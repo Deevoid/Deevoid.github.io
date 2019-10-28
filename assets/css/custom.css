@@ -30,17 +30,15 @@ html {
 
 body {
     font-size: 1rem;
+    height: 100vh;
 }
-
+main{
+    flex: 1 0 auto;
+}
 .container {
-    max-width: 95%;
+   
 }
-
-a:hover
-{   
-  text-decoration: none;
-}
-a{
+a,a:hover{
     text-decoration: none;
 }
 /*Nav*/
@@ -65,7 +63,40 @@ a.navbar-brand:hover{
 .navbar-a{
     color: #063070;
 }
-/*Nav*/
+/*Nav*/ 
+
+/*FOOTER*/
+footer{
+    font-family: 'Nunito', sans-serif;
+}
+#sticky-footer{
+    background: #3ECF8E;
+}
+.foot-h5{
+    color:  #063070; 
+}
+#foot-1,#foot-2 h5{
+    color:  #063070; 
+}
+#foot-1,#foot-2 p{
+    color: #e7e7e7;
+    margin-bottom: 0;
+}
+#foot-2 a,a:hover{
+    text-decoration: none;
+    color: #e7e7e7;
+}
+.copyright{
+    background: #063070; 
+    color: #e7e7e7;
+    font-size: 0.7rem;
+    margin-bottom: 0px; 
+}
+.copyright a{
+    text-decoration: none;
+}
+/*FOOTER*/
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -122,19 +153,13 @@ a.navbar-brand:hover{
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
+/* XS Extra small devices (portrait phones, less than 576px)*/
+@media screen and (max-width: 575.98px) {
+    
+}
 
-
-/*
-carousel 
-*/
-
-/* 
-carousel 
-*/
-/* 
-Media Queries
-*/
-@media screen and (max-width: 600px) {
+/* SM Small devices (landscape phones, less than 768px)*/
+@media screen and (max-width: 767.98px) {
     .navbar-brand{
         font-size: 1.5rem;
     }
@@ -142,46 +167,14 @@ Media Queries
         font-size: 1.2rem;
     }
 }
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
+
+/* MD  Medium devices (tablets, less than 992px)*/
+@media screen and (max-width: 991.98px) {
     
 }
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
+/* LG Large devices (desktops, less than 1200px)*/
+@media screen and (max-width: 1199.98px) {
     
 }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {}
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {}
-
-/* 
-Insert Comment 
-*/
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
-
-/* 
-Insert Comment 
-*/
-/* 
-Insert Comment 
-*/
-/* 
-Insert Comment 
-*/
-/* 
-Insert Comment 
-*/
