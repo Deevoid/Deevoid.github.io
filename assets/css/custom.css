@@ -106,7 +106,6 @@ footer .container{
     color: #063070;
     width: 300px;
     position: fixed;
-    top: 73px;
     left: -300px;
     height: 100vh;
     z-index: 1010;
@@ -128,10 +127,6 @@ footer .container{
     left: 300px;
     position: fixed;
     transition: all 0.2s ease-in-out;
-}
-.sidebar-header{
-    padding: 15px;
-    font-family: 'Nunito', sans-serif;
 }
 .side-item{
     padding: 10px;
@@ -172,13 +167,14 @@ main .container{
    font-family: 'Archivo Black', sans-serif;
     letter-spacing: 1px;
     font-size: 2rem;
-    color: #fafafa;
+    color: #e7e7e7;
     text-shadow: 1px 1px #000000;
     
 }
 
 .input-group{
     width: 50vw;
+    opacity: 0.7;
 }
 
 .form-control{
