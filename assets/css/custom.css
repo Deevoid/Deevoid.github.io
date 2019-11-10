@@ -157,7 +157,7 @@ footer .container{
     MAIN
 ----------------------------------------------------- */
 main .container{
-    max-width: 95%;
+    
 }
 
 .main-div{
@@ -166,7 +166,6 @@ main .container{
     background-size: cover;
     background-position: 50% 20%;
     width: 100%;
-    max-height: 40vh;
     overflow: hidden;
 }
 .lost-p{
@@ -174,20 +173,35 @@ main .container{
     letter-spacing: 1px;
     font-size: 2rem;
     color: #fafafa;
+    text-shadow: 1px 1px #000000;
     
 }
 
+.input-group{
+    width: 50vw;
+}
 
-
-
-
-
-
-
-
-
-
-
+.form-control{
+    border-radius: 20px 0px 0px 20px !important;
+    background: #e7e7e7;
+}
+.input-group-append button{
+    border-radius: 0px 20px 20px 0px !important;
+    background: #3ECF8E;
+}
+.quote{
+    background: rgba(255, 255, 255, 0.6);
+    width: 40vw;
+    display: inline-block;
+    overflow: visible;
+}
+.star{
+    margin-top: -18px;
+    font-size: 1.5rem;
+}
+.quote-text{
+    color: #063070;
+}
 
 
 
@@ -212,6 +226,12 @@ main .container{
     }
     .lost-p{
         font-size: 1.5rem;
+    }
+    .input-group{
+    width: 90vw;
+    }
+    .quote{
+        width: 80vw;
     }
 }
 
