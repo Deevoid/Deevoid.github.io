@@ -153,7 +153,6 @@ footer .container{
 ----------------------------------------------------- */
 /*DIV 1*/
 .main-div{
-    background-blend-mode: color-burn;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
