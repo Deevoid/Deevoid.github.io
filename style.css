@@ -1,0 +1,11 @@
+html, body{
+    height: 100%;
+    margin: 0;
+
+}
+.container{
+    min-height: 100vh;
+}
+body{
+    background-image: url(/assets/img/header-bg2.jpg);
+}

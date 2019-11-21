@@ -29,6 +29,7 @@ html {
 
 body {
     font-size: 1rem;
+    background-image: url(/assets/img/header-bg2.jpg);
     font-family: 'Nunito', sans-serif;
 }
 main{
@@ -37,7 +38,21 @@ main{
 a,a:hover{
     text-decoration: none;
 }
-
+.logo{
+    font-family: 'Poiret One', cursive;
+    font-size: 2rem;
+    padding-left: 20px;
+    
+}
+.five{
+    font-family: 'Fugaz One', cursive;
+    font-size: 0.7rem;
+    display: inline-block;;
+    transform: rotate(-90deg);
+    transform-origin: top;
+    writing-mode: tb-rl;
+    
+}
 /* ---------------------------------------------------
     HEADER
 ----------------------------------------------------- */
@@ -46,11 +61,8 @@ a,a:hover{
     background: #3ECF8E;
     font-size: 1.5rem; 
 }
-.navbar-brand{
-    color: #ffffff; 
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 2rem;
+.navbar-brand > img{
+    
 }
 a.navbar-brand:hover{
     color: #ffffff;
@@ -160,12 +172,13 @@ footer .container{
     height: 100%;
     overflow: hidden;
 }
+
 .lost-p{
    font-family: 'Archivo Black', sans-serif;
     letter-spacing: 1px;
     font-size: 2rem;
     color: #fafafa;
-    text-shadow: 1px 1px #000000;
+    
     
 }
 

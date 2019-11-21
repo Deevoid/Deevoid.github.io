@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
-    <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -10,231 +11,40 @@
     <meta name="keywords" content="MediaCenter, Template, eCommerce">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Title -->
-    <link rel="shortcut icon" href="assets/img/logo.ico" />
-    <title>Fantastic Five - Your one stop destination for everything Fantastic</title>
-    <!-- Bootstrap CSS CDN -->
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link href="assets/css/custom.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <!-- Font Awesome JS -->
-    <script src="https://kit.fontawesome.com/46c3d2b5c4.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-
+    
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
-<body class="d-flex flex-column">
-
-    <!-- NAVABAR-->
-    <nav class="navbar sticky-top navbar-expand-lg">
-        <a class="navbar-a" onclick="myf()"><i class="fas fa-stream"></i></a>
-        <a class="navbar-brand mx-auto" href="#">Fantastic<span class="dice"><i class="fas fa-spin fa-dice-five"></i></span>Five</a>
-        <a class="navbar-a" href="#"><i class="fas fa-search"></i></a>
+<body>
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand mx-auto text-light" href="#">
+            WELCOME !
+        </a>
     </nav>
-    <!-- NAVABAR-->
-
-    <!-- SIDEBAR-->
-    <nav id="sidebar" class="disable-scrollbars">
-        <div class="my-4">a</div>
-        <ul class="navbar-nav flex-column pt-4 ">
-            <li class="side-item"><a class="pl-4" href="#">TOP REVIEWS<i class="fas fa-star pl-1 text-warning"></i></a></li>
-            <li class="side-item"><a class="pl-4" href="#">FASHION</a></li>
-            <li class="side-item"><a class="pl-4" href="#">ELECTRONICS</a></li>
-            <li class="side-item"><a class="pl-4" href="#">FITNESS</a></li>
-            <li class="side-item"><a class="pl-4" href="#">HOME & DECOR</a></li>
-            <li class="side-item"><a class="pl-4" href="#">GIFT GUIDES</a></li>
-            <li class="side-item"><a class="pl-4" href="#">OFFERS</a></li>
-        </ul>
-        <div class="side-work">
-            <button type="button" class="btn btn-outline-dark btn-lg btn-block">Work with us <i class="fas fa-pen-alt"></i></button>
-        </div>
-    </nav>
-    <!-- SIDEBAR-->
-
-    <!-- OVERLAY -->
-    <div id="overlay" class="" onclick="myf()"></div>
-    <!-- OVERLAY -->
-
-
-    <main>
-        <section>
-            <div class="main-div text-center" style="background-image: url(assets/img/div1.jpg)">
-                <div class="container">
-                    <div class="mt-5">
-                        <p class="lost-p">Feeling Lost? Search something fantastic!</p>
-                    </div>
-                    <div class="my-5">
-                        <div class="input-group  mb-3 mx-auto">
-                            <input type="text" class="form-control" placeholder="Type a fantastic keyword" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-light" type="button">Search</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="quote my-5">
-                        <div class="star">
-                            <ul class="nav justify-content-center">
-                                <li><i class="fas fa-star pl-1 text-warning"></i></li>
-                                <li><i class="fas fa-star pl-1 text-warning"></i></li>
-                                <li><i class="fas fa-star pl-1 text-warning"></i></li>
-                                <li><i class="fas fa-star pl-1 text-warning"></i></li>
-                                <li><i class="fas fa-star pl-1 text-warning"></i></li>
-                            </ul>
-                        </div>
-                        <div class="quote-text">
-                            <h6>A fantastic quote for you-</h6>
-                            <blockquote class="blockquote">
-                                <p class="mb-0">A bargain ain't a bargain unless it's something you need.</p>
-                                <footer class="blockquote-footer"><cite>Sidney Carroll</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
+    <div class="main-div">
+        <div class="container d-flex">
+            <form class="mx-auto my-auto">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" name="id" aria-describedby="emailHelp"
+                        placeholder="Enter email">
                 </div>
-            </div>
-        </section>
-        <section class="my-5" id="top-review">
-            <div class="container text-center">
-                <div class="div2-head">
-                    <h2 class="font-weight-bolder">TOP REVIEWS</h2>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" name="pass" placeholder="Password">
+                    <small id="emailHelp" class="form-text text-muted">Never share your password with anyone
+                        else.</small>
                 </div>
-                <div class="div2-row my-5">
-                    <div class="row justify-content-center my-4">
-                        <div class=" col-6 col-lg-2">
-                            <div class="card text-center my-3">
-                                <img src="assets/img/abc.png" class="card-img-top">
-                                <div class="card-footer border-light bg-transparent"><a class="stretched-link" href="#">PRODUCT</a>   </div>
-                            </div>
-                        </div>
-                        <div class=" col-6 col-lg-2">
-                            <div class="card text-center my-3">
-                                <img src="assets/img/abc.png" class="card-img-top">
-                                <div class="card-footer border-light bg-transparent"><a class="stretched-link" href="#">PRODUCT</a>   </div>
-                            </div>
-                        </div>
-                        <div class=" col-6 col-lg-2">
-                            <div class="card text-center my-3">
-                                <img src="assets/img/abc.png" class="card-img-top">
-                                <div class="card-footer border-light bg-transparent"><a class="stretched-link" href="#">PRODUCT</a>   </div>
-                            </div>
-                        </div>
-                        <div class=" col-6 col-lg-2">
-                            <div class="card text-center my-3">
-                                <img src="assets/img/abc.png" class="card-img-top">
-                                <div class="card-footer border-light bg-transparent"><a class="stretched-link" href="#">PRODUCT</a>   </div>
-                            </div>
-                        </div>
-                        <div class=" col-6 col-lg-2">
-                            <div class="card text-center my-3">
-                                <img src="assets/img/abc.png" class="card-img-top">
-                                <div class="card-footer border-light bg-transparent"><a class="stretched-link" href="#">PRODUCT</a>   </div>
-                            </div>
-                        </div>
-                        <div class=" col-6 col-lg-2">
-                            <div class="card text-center my-3">
-                                <img src="assets/img/abc.png" class="card-img-top">
-                                <div class="card-footer border-light bg-transparent"><a class="stretched-link" href="#">PRODUCT</a>   </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="text-center">
+                    <button type="submit" onclick="fun(this.form)" class="btn btn-primary">LOGIN</button>
                 </div>
-                <div class="div2-btn my-5">
-                    <a class="btn" href="index.html" role="button">View All Categories</a>
-                </div>
-            </div>
-        </section>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-    </main>
 
-    <footer id="sticky-footer" class="pt-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md" id="foot-1">
-                    <div>
-                        <a class="navbar-brand mx-auto" href="#">Fantastic<span class="dice"><i class="fas fa-spin fa-dice-five"></i></span>Five</a>
-                    </div>
-                    <div class="py-2">
-                        <h5 class="foot-h5 font-weight-bold">Be Fantastic Buy Fantanstic!</h5>
-                        <p>Your one stop destination for better buying decisions.</p>
-                    </div>
-                </div>
-                <div class="col-md" id="foot-2">
-                    <div class="float-md-right">
-                        <h5 class="font-weight-bold">Who we are<i class="fas pl-2 fa-check-circle"></i></h5>
-                        <p><a href="#">About us</a> </p>
-                        <p><a href="#">Contact us</a> </p>
-                        <p><a href="#">Sitemap</a> </p>
-                        <p><a href="#">Privacy Policy</a> </p>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
-        <div class="copyright text-center mt-3">
-            <p class="mb-0 py-1"> &copy; Fantastic Five &#124; Made with<i class="fas text-danger px-1 fa-heart"></i>and<i class="fas text-warning px-1 fa-coffee"></i></p>
-        </div>
-    </footer>
-
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+    </div>
+    <script src="my.js"></script>
 </body>
 
 </html>
