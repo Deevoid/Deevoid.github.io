@@ -1,0 +1,23 @@
+html, body{
+    height: 100%;
+    margin: 0;
+
+}
+.container{
+    
+}
+body{
+    background-image: url(/assets/img/header-bg2-md.jpg);
+}
+#img,#cover{
+    max-width: 400px;
+}
+.btns{
+    cursor: pointer;
+}
+textarea{
+    width:300px;
+    padding:10px;
+    height:200px;
+    resize:none;
+}

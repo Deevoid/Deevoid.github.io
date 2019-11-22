@@ -1,7 +1,7 @@
 function fun(form) {
     if (form.id.value == "123@a.com") {
         if (form.pass.value == "123") {
-            window.open('new.html');
+            window.open('ok.html');
         } else {
             alert("Invalid Password");
         }
