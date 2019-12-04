@@ -1,0 +1,175 @@
+//Custom Stylesheet | Designed by Dev
+
+//variables
+@import './variables';
+//import globals
+@import './global';
+
+  header{
+      background: url(/img/header-bg.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      .logo-text{
+          font-size: 1.5em;
+          vertical-align: middle;
+      }
+      nav{
+          li{
+              color: $Text;
+              cursor: pointer;
+              opacity: 0.7;
+              &:hover{
+                  opacity: 1;
+              }
+          }
+          a,a:hover{
+              color: $Text;
+          }
+      }
+      img{
+          border-radius: 50%;          
+      }
+      .row{
+        height: 80vh;
+      }
+      .col-img{
+          @include cent();
+      }
+      .col-text{
+          button{
+              font-weight: bold;
+            border: solid 2px $Text;
+            background: rgb(224,223,255);
+            background: linear-gradient(90deg, rgba(224,223,255,1) 0%, rgba(255,241,237,1) 100%);
+            &:hover{
+                background: $Alternatebg;
+                border: solid 2px $Headings;
+            }
+          }
+          h3{
+              color: $Text;
+          }
+      }
+      .name{
+          color: $Headings;
+          font-size: 1.5em;
+      }
+      .info{
+          color: $Headings;
+          a{
+              color: $Text;
+          }
+      }
+  }
+.middle{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mouse{
+    width: 30px;
+    height: 50px;
+    border: 2px solid $Headings;
+    border-radius: 20px;
+    opacity: 0.7;
+    &::before{
+        content: '';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 5px;
+        background: $Headings;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        opacity: 1;
+        animation: mouse 1s ease infinite;
+    }
+}
+@keyframes mouse{
+    from{
+        opacity: 1;
+        top: 10px;
+    }
+    to{
+        opacity: 0;
+        top: 30px;
+
+    }
+}
+main{
+    .section-about{
+        height: 100vh;
+        background: url(/img/bg-2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media only screen and (max-width: 768.98px){
+            text-align: center;
+        }
+        .row{
+            height: 80vh;
+            @include cent();
+        }
+        .col-text{
+            vertical-align: middle;
+            h2{
+                color: $Headings;
+            }
+            button{
+                cursor: pointer;
+                font-weight: bold;
+              border: solid 2px $Text;
+              background: rgb(224,223,255);
+              background: linear-gradient(90deg, rgba(224,223,255,1) 0%, rgba(255,241,237,1) 100%);
+              &:hover{
+                  background: $Alternatebg;
+                  border: solid 2px $Headings;
+              }
+            }
+        }
+        .col-img{
+            vertical-align: middle;
+            img{
+                height: 400px;
+                width: 400px;
+                margin: 0;
+            }
+        }
+    }
+    .section-skills{
+        min-height: 100vh;
+        background: url(/img/Rose-Petals.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        h1{
+            color: $Alternatebg;
+        }
+        .pill{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-deck{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            img{
+                padding: 10px;
+            }
+        }
+        .card{
+            box-shadow: 0px 0px 0px;
+            transition: box-shadow .2s ease-out;
+            &:hover{
+                box-shadow: 1px 8px 20px $Accentred;
+                transition: box-shadow .2s ease-in;
+            }
+        }
+        
+    }
+    
+    
+    
+}

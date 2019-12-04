@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+body {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    @media only screen and (max-width: 576px) {
+      font-size: 0.9em;
+      h1,h2,h3,h4{
+        font-size: 1em;
+      }
+    }
+}
+main {
+    flex: 1 0 auto;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1;
+    color: $Headings;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  button {
+    cursor: pointer;
+  }
+
+  //MIXINS GOES HERE
+  @mixin cent() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
