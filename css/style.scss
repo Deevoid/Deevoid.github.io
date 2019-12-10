@@ -6,22 +6,19 @@
 @import './global';
 
 #topbtn{
+    font-size: 2em;
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    color: $Primary;
+    color: $Text;
     opacity: 1;
-    background: $Darkbg;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
     cursor: pointer;
     z-index: 99;
     border: none;
     outline: none;
     &:hover{
-        color: #fff;
+        color:$Primary;
     }
 }
 
@@ -32,24 +29,23 @@ header {
     height: 100vh;
 
     .logo-text {
-        font-size: 1.5em;
+        font-size: 1.2em;
         vertical-align: middle;
     }
 
     nav {
-        li {
+        a {
             color: $Text;
             cursor: pointer;
-            opacity: 0.7;
-
-            &:hover {
-                opacity: 1;
-            }
+            opacity: 1;
         }
-
-        a,
         a:hover {
-            color: $Text;
+            color: $Primary;
+        }
+        li{
+            @media only screen and (max-width: 576px) {
+                font-size: 0.8em;
+            }
         }
     }
 
@@ -67,32 +63,29 @@ header {
 
     .col-text {
         button {
-            font-weight: bold;
-            border: solid 2px $Text;
-            background: rgb(224, 223, 255);
-            background: linear-gradient(90deg, rgba(224, 223, 255, 1) 0%, rgba(255, 241, 237, 1) 100%);
-
+                cursor: pointer;
+                font-weight: bold;
+                border: solid 2px $Text;
+                background: $gradient;
+                transition: background 1s ease;
             &:hover {
-                background: $Alternatebg;
+                background: $Primary;
+                color: $Lines;
                 border: solid 2px $Headings;
             }
         }
 
         h3 {
-            color: $Text;
+            color: $Headings;
         }
     }
-
-    .name {
-        color: $Headings;
-        font-size: 1.5em;
-    }
-
     .info {
         color: $Headings;
-
+        font-size: 1em;
+        font-weight: bold;
+        opacity: 0.7;
         a {
-            color: $Text;
+            color: $Lines;
         }
     }
 }
@@ -149,7 +142,10 @@ main {
         @media only screen and (max-width: 768.98px) {
             text-align: center;
         }
-
+        p{
+            opacity: 0.8;
+            font-weight: 500;
+        }
         .row {
             height: 80vh;
             @include cent();
@@ -166,12 +162,13 @@ main {
                 cursor: pointer;
                 font-weight: bold;
                 border: solid 2px $Text;
-                background: rgb(224, 223, 255);
-                background: linear-gradient(90deg, rgba(224, 223, 255, 1) 0%, rgba(255, 241, 237, 1) 100%);
+                background: $gradient;
+                transition: background .6s ease;
 
                 &:hover {
-                    background: $Alternatebg;
-                    border: solid 2px $Headings;
+                    background: $Primary;
+                color: $Lines;
+                border: solid 2px $Headings;
                 }
             }
         }
@@ -193,7 +190,7 @@ main {
         background-repeat: no-repeat;
         background-size: cover;
 
-        h1 {
+        h2 {
             color: $Alternatebg;
         }
 
@@ -271,6 +268,22 @@ main {
                 }
             }
         }
+        #project-link{
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $Headings;
+                border: solid 2px $Headings;
+                padding: 0.6em;
+                border-radius: 10%;
+                background: $Alternatebg;
+                &:hover{
+                    background: $Primary;
+                    color: $Lines;
+                    border: solid 2px $Lines;
+                }
+            }
+        }
 
     }
     .section-contact{
@@ -337,9 +350,6 @@ main {
             }
         }
     }
-
-
-
 }
 footer{
     #sticky-footer{

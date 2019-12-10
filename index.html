@@ -34,7 +34,7 @@
 
     </div>
     <!-- End Pre-loader -->
-    <button id="topbtn" onclick="up()" class="btn" title="Jump to top"><span><i class="fas fa-chevron-circle-up"></i></span></button>
+    <span id="topbtn" onclick="up()" class="btn" title="Jump to top"><i class="fas fa-chevron-circle-up"></i></span>
     <!-- header -->
     <header>
     <!-- NAVBAR -->
@@ -45,7 +45,7 @@
                     <img src="/img/logo.svg" height="50" width="50" alt="LOGO" class="img-fluid">
                     <span class="logo-text font-weight-bold pl-2">DEV</span>
                 </a>
-                <ul class="nav">
+                <ul class="nav ml-auto">
                     <li class="nav-item"><a class="nav-link font-weight-bold" href="#section2">About Me</a></li>
                     <li class="nav-item"><a class="nav-link font-weight-bold" href="#contact">Contact</a></li>
                 </ul>
@@ -62,8 +62,8 @@
             </div>
             <div class="col-sm-6 col-text">
                 <h1 class="mt-4 font-weight-bolder">HELLO<hr></h1><br>
-                <h3>I AM<span class="name ml-3 font-weight-bold">DEV</span></h3>
-                <p class="info mt-5">Freelance Web developer and UI/UX enthusiast.<br>Feel free to check out my recent works on the projects page.<br>Also you can stop and say hello @ <a href="mailto:dev.4.pandey@gmail.com">dev.4.pandey@gmail.com</a></p>
+                <h3 class="font-weight-bolder">I AM DEV</h3>
+                <p class="info mt-5 text-justify">Front-End Web developer and UI/UX enthusiast.<br>Feel free to check out my recent works on the projects page.<br>Also you can stop and say hello @ <a href="mailto:dev.4.pandey@gmail.com">dev.4.pandey@gmail.com</a></p>
                 <button class="btn btn-lg">Get CV</button>
             </div>
         </div>
@@ -83,7 +83,8 @@
                 <div class="row pt-5">
                     <div class="col-sm-6 col-text">
                         <h2 class="font-weight-bold">Who I am</h2><br>
-                        <p class="text-break text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, molestiae pariatur maxime dolorum blanditiis quod magnam dicta culpa quasi, placeat hic nesciunt aliquam molestias similique unde alias accusantium neque possimus.</p>
+                        <p class="text-break text-justify">I am a Front-End web developer who loves to innovate new designs.<br>While not freelancing or creating a new design concept,you can find me playing video games and scraping the internet for some ideas.<br>I've hands on experience in Logo designing and SEO optimization.
+                        <br>Want to start a project? Hit me up!</p>
                         <button class="btn btn-lg mt-3">Download CV</button>
                     </div>
                     <div class="col-sm-6 d-none d-md-block col-img text-center">
@@ -94,7 +95,7 @@
         </section>
         <section class="section-skills" id="section3">
             <div class="container">
-                <h1 class="font-weight-bold text-center py-5">Things I know</h1>
+                <h2 class="font-weight-bold text-center py-5">Things I know</h2>
                 <div class="text-center pill">
                     <ul class="list-inline">
                         <li class="list-inline-item p-3"><h3><span class="badge badge-pill p-2 badge-light">Figma</span></h3></li>
@@ -118,19 +119,19 @@
                         <div class="card text-center">
                                 <img src="/img/webd.svg">
                                 <div class="card-body">
-                                    <h3>Web Development</h3>                                    
+                                    <h4>Web Development</h4>                                    
                                 </div>
                             </div>
                             <div class="card text-center">
                                     <img src="/img/uiux.svg">
                                     <div class="card-body">
-                                        <h3>UI/UX Designing</h3>                                        
+                                        <h4>UI/UX Designing</h4>                                        
                                     </div>
                                 </div>
                                 <div class="card text-center">
                                         <img src="/img/seo.svg">
                                         <div class="card-body">
-                                            <h3>SEO Optimization</h3>
+                                            <h4>SEO Optimization</h4>
                                         </div>
                                     </div>
 
@@ -139,92 +140,33 @@
         </section>
         <section class="section-project">
             <div class="container">
-                <h1 class="text-center font-weight-bold py-3">Projects</h1>
-                <div class="card-grid row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <h2 class="text-center font-weight-bold py-3 my-5">Projects</h2>
+                <div class="card-grid row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
                     <div class="col mb-4">
                         <div class="card h-100 text-center card-test">
-                            <div class="overlay">
-                                <p>sjchsbcjsbdc sdbcsabsdjcbsjsbdvj bsd bsdjv s bsdbcdsc  sd dhsd</p>
+                            <div class="overlay" id="project-link">
+                                <p>Hide your messages in a plain image and send it anywhere.</p>
+                                <a href="./crypt/ok.html" target="_blank">View</a>
                             </div>
-                            <img src="/img/seo.svg">
+                            <img src="/img/Frame 1.png">
                             <div class="card-body"></div>
                             <div class="card-footer">
                                 <h5>Encryption using steganography</h5>
                             </div>
                         </div>
-                    </div>
-                    <div class="col mb-4">
-                            <div class="card h-100 text-center card-test">
-                                <div class="overlay">
-                                    <p>sjchsbcjsbdc sdbcsabsdjcbsjsbdvj bsd bsdjv s bsdbcdsc  sd dhsd</p>
-                                </div>
-                                <img src="/img/seo.svg">
-                                <div class="card-body"></div>
-                                <div class="card-footer">
-                                    <h5>Encryption using steganography</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-4">
-                                <div class="card h-100 text-center card-test">
-                                    <div class="overlay">
-                                        <p>sjchsbcjsbdc sdbcsabsdjcbsjsbdvj bsd bsdjv s bsdbcdsc  sd dhsd</p>
-                                    </div>
-                                    <img src="/img/seo.svg">
-                                    <div class="card-body"></div>
-                                    <div class="card-footer">
-                                        <h5>Encryption using steganography</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                    <div class="card h-100 text-center card-test">
-                                        <div class="overlay">
-                                            <p>sjchsbcjsbdc sdbcsabsdjcbsjsbdvj bsd bsdjv s bsdbcdsc  sd dhsd</p>
-                                        </div>
-                                        <img src="/img/seo.svg">
-                                        <div class="card-body"></div>
-                                        <div class="card-footer">
-                                            <h5>Encryption using steganography</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col mb-4">
-                                        <div class="card h-100 text-center card-test">
-                                            <div class="overlay">
-                                                <p>sjchsbcjsbdc sdbcsabsdjcbsjsbdvj bsd bsdjv s bsdbcdsc  sd dhsd</p>
-                                            </div>
-                                            <img src="/img/seo.svg">
-                                            <div class="card-body"></div>
-                                            <div class="card-footer">
-                                                <h5>Encryption using steganography</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col mb-4">
-                                            <div class="card h-100 text-center card-test">
-                                                <div class="overlay">
-                                                    <p>sjchsbcjsbdc sdbcsabsdjcbsjsbdvj bsd bsdjv s bsdbcdsc  sd dhsd</p>
-                                                </div>
-                                                <img src="/img/seo.svg">
-                                                <div class="card-body"></div>
-                                                <div class="card-footer">
-                                                    <h5>Encryption using steganography</h5>
-                                                </div>
-                                            </div>
-                                        </div>
+                    </div>                                   
                   </div>
             </div>
         </section>
         <section class="section-contact" id="contact">
             <div class="container">
-                <h2 class="text-center my-5">&lt; You can say hello @ &gt;</h2>
+                <h3 class="text-center my-5">&lt; You can say hello @ &gt;</h3>
                 <div class="social text-center my-5 pt-5">
                     <ul class="list-inline">
-                        <li class="list-inline-item p-3 text-center"><button class="btn btn-lg p-2 insta"><a href="#"><span><i class="fab fa-instagram"></i></span></a></button></li>
-                        <li class="list-inline-item p-3 text-center"><button class="btn btn-lg p-2 fb"><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></button></li>
-                        <li class="list-inline-item p-3 text-center"><button class="btn btn-lg p-2 twitter"><a href="#"><span><i class="fab fa-twitter"></i></span></a></button></li>
-                        <li class="list-inline-item p-3 text-center"><button class="btn btn-lg p-2 git"><a href="#"><span><i class="fab fa-github"></i></span></a></button></li>
+                        <li class="list-inline-item p-3 text-center"><button class="btn btn-lg p-2 insta"><a href="https://www.instagram.com/dee_void/" target="_blank"><span><i class="fab fa-instagram"></i></span></a></button></li>
+                        <li class="list-inline-item p-3 text-center"><button class="btn btn-lg p-2 fb"><a href="https://www.facebook.com/profile.php?id=100029457435319" target="_blank"><span><i class="fab fa-facebook-f"></i></span></a></button></li>
+                        <li class="list-inline-item p-3 text-center"><button class="btn btn-lg p-2 twitter"><a href="https://twitter.com/dee_void_" target="_blank"><span><i class="fab fa-twitter"></i></span></a></button></li>
+                        <li class="list-inline-item p-3 text-center"><button class="btn btn-lg p-2 git"><a href="https://github.com/Deevoid" target="_blank"><span><i class="fab fa-github"></i></span></a></button></li>
                     </ul> 
                 </div>
             </div>
