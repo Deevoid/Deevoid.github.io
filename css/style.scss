@@ -5,76 +5,113 @@
 //import globals
 @import './global';
 
-  header{
-      background: url(/img/header-bg.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100vh;
-      .logo-text{
-          font-size: 1.5em;
-          vertical-align: middle;
-      }
-      nav{
-          li{
-              color: $Text;
-              cursor: pointer;
-              opacity: 0.7;
-              &:hover{
-                  opacity: 1;
-              }
-          }
-          a,a:hover{
-              color: $Text;
-          }
-      }
-      img{
-          border-radius: 50%;          
-      }
-      .row{
+#topbtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: $Primary;
+    opacity: 1;
+    background: $Darkbg;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 99;
+    border: none;
+    outline: none;
+    &:hover{
+        color: #fff;
+    }
+}
+
+header {
+    background: url(/img/header-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .logo-text {
+        font-size: 1.5em;
+        vertical-align: middle;
+    }
+
+    nav {
+        li {
+            color: $Text;
+            cursor: pointer;
+            opacity: 0.7;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        a,
+        a:hover {
+            color: $Text;
+        }
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    .row {
         height: 80vh;
-      }
-      .col-img{
-          @include cent();
-      }
-      .col-text{
-          button{
-              font-weight: bold;
+    }
+
+    .col-img {
+        @include cent();
+    }
+
+    .col-text {
+        button {
+            font-weight: bold;
             border: solid 2px $Text;
-            background: rgb(224,223,255);
-            background: linear-gradient(90deg, rgba(224,223,255,1) 0%, rgba(255,241,237,1) 100%);
-            &:hover{
+            background: rgb(224, 223, 255);
+            background: linear-gradient(90deg, rgba(224, 223, 255, 1) 0%, rgba(255, 241, 237, 1) 100%);
+
+            &:hover {
                 background: $Alternatebg;
                 border: solid 2px $Headings;
             }
-          }
-          h3{
-              color: $Text;
-          }
-      }
-      .name{
-          color: $Headings;
-          font-size: 1.5em;
-      }
-      .info{
-          color: $Headings;
-          a{
-              color: $Text;
-          }
-      }
-  }
-.middle{
+        }
+
+        h3 {
+            color: $Text;
+        }
+    }
+
+    .name {
+        color: $Headings;
+        font-size: 1.5em;
+    }
+
+    .info {
+        color: $Headings;
+
+        a {
+            color: $Text;
+        }
+    }
+}
+
+.middle {
     position: absolute;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.mouse{
+
+.mouse {
     width: 30px;
     height: 50px;
     border: 2px solid $Headings;
     border-radius: 20px;
     opacity: 0.7;
-    &::before{
+
+    &::before {
         content: '';
         width: 10px;
         height: 10px;
@@ -88,88 +125,228 @@
         animation: mouse 1s ease infinite;
     }
 }
-@keyframes mouse{
-    from{
+
+@keyframes mouse {
+    from {
         opacity: 1;
         top: 10px;
     }
-    to{
+
+    to {
         opacity: 0;
         top: 30px;
 
     }
 }
-main{
-    .section-about{
+
+main {
+    .section-about {
         height: 100vh;
         background: url(/img/bg-2.svg);
         background-repeat: no-repeat;
         background-size: cover;
-        @media only screen and (max-width: 768.98px){
+
+        @media only screen and (max-width: 768.98px) {
             text-align: center;
         }
-        .row{
+
+        .row {
             height: 80vh;
             @include cent();
         }
-        .col-text{
+
+        .col-text {
             vertical-align: middle;
-            h2{
+
+            h2 {
                 color: $Headings;
             }
-            button{
+
+            button {
                 cursor: pointer;
                 font-weight: bold;
-              border: solid 2px $Text;
-              background: rgb(224,223,255);
-              background: linear-gradient(90deg, rgba(224,223,255,1) 0%, rgba(255,241,237,1) 100%);
-              &:hover{
-                  background: $Alternatebg;
-                  border: solid 2px $Headings;
-              }
+                border: solid 2px $Text;
+                background: rgb(224, 223, 255);
+                background: linear-gradient(90deg, rgba(224, 223, 255, 1) 0%, rgba(255, 241, 237, 1) 100%);
+
+                &:hover {
+                    background: $Alternatebg;
+                    border: solid 2px $Headings;
+                }
             }
         }
-        .col-img{
+
+        .col-img {
             vertical-align: middle;
-            img{
+
+            img {
                 height: 400px;
                 width: 400px;
                 margin: 0;
             }
         }
     }
-    .section-skills{
+
+    .section-skills {
         min-height: 100vh;
         background: url(/img/Rose-Petals.svg);
         background-repeat: no-repeat;
         background-size: cover;
-        h1{
+
+        h1 {
             color: $Alternatebg;
         }
-        .pill{
+
+        .pill {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
         }
-        .card-deck{
+
+        .card-deck {
             padding-top: 50px;
             padding-bottom: 50px;
-            img{
+
+            img {
                 padding: 10px;
             }
         }
-        .card{
+
+        .card {
             box-shadow: 0px 0px 0px;
             transition: box-shadow .2s ease-out;
-            &:hover{
+
+            &:hover {
                 box-shadow: 1px 8px 20px $Accentred;
                 transition: box-shadow .2s ease-in;
             }
         }
-        
+
     }
-    
-    
-    
+
+    .section-project {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .card-grid {
+            img {
+                padding: 10px;
+            }
+        }
+
+        .card-test {
+            div {
+                position: relative;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: -100%;
+                background-color: $Primary;
+                color: $Lines;
+                height: 100%;
+                width: 100%;
+                z-index: 10;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transition: left .7s;
+            }
+
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0px 0px 0px;
+            transition: box-shadow .2s ease-out;
+            &:hover {
+                box-shadow: 1px 8px 20px $Accentred;
+                transition: box-shadow .2s ease-in;
+                .overlay {
+                    left: 0;
+                }
+            }
+        }
+
+    }
+    .section-contact{
+        background: $Primary;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        h2{
+            color: $Headings;
+        }
+        button{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            span{
+                font-size: 1.5em;
+            }
+        }
+        .insta{
+            a{
+                color: #e1306c;
+            }
+            background:#fff;
+            &:hover{
+                a{
+                    color: #fff;
+                }
+                background:#e1306c ;
+            }
+        }
+        .fb{
+            a{
+                color: #3b5998;
+            }
+            background:#fff;
+            &:hover{
+                a{
+                    color: #fff;
+                }
+                background:#3b5998 ;
+            }
+        }
+        .twitter{
+            a{
+                color: #1da1f2;
+            }
+            background:#fff;
+            &:hover{
+                a{
+                    color: #fff;
+                }
+                background:#1da1f2 ;
+            }
+        }
+        .git{
+            a{
+                color: #333;
+            }
+            background:#fff;
+            &:hover{
+                a{
+                    color: #fff;
+                }
+                background:#333 ;
+            }
+        }
+    }
+
+
+
+}
+footer{
+    #sticky-footer{
+        position: absolute;
+        bottom: 0;
+    }
+    span{
+        color: $Accentred;
+    }
 }

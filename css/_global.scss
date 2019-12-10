@@ -1,6 +1,8 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 *,
 *:before,
@@ -16,14 +18,11 @@ a{
     }
 }
 body {
-    font-size: 1em;
+    
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     @media only screen and (max-width: 576px) {
-      font-size: 0.9em;
-      h1,h2,h3,h4{
-        font-size: 1em;
-      }
+      
     }
 }
 main {
@@ -47,9 +46,4 @@ main {
     cursor: pointer;
   }
 
-  //MIXINS GOES HERE
-  @mixin cent() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  

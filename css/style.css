@@ -2,6 +2,8 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 *,
@@ -20,18 +22,8 @@ a:hover {
 }
 
 body {
-  font-size: 1em;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-}
-
-@media only screen and (max-width: 576px) {
-  body {
-    font-size: 0.9em;
-  }
-  body h1, body h2, body h3, body h4 {
-    font-size: 1em;
-  }
 }
 
 main {
@@ -60,6 +52,27 @@ button {
   cursor: pointer;
 }
 
+#topbtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #6c63ff;
+  opacity: 1;
+  background: #333C44;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  z-index: 99;
+  border: none;
+  outline: none;
+}
+
+#topbtn:hover {
+  color: #fff;
+}
+
 header {
   background: url(/img/header-bg.svg);
   background-repeat: no-repeat;
@@ -82,7 +95,8 @@ header nav li:hover {
   opacity: 1;
 }
 
-header nav a, header nav a:hover {
+header nav a,
+header nav a:hover {
   color: #666;
 }
 
@@ -300,5 +314,161 @@ main .section-skills .card:hover {
   transition: -webkit-box-shadow .2s ease-in;
   transition: box-shadow .2s ease-in;
   transition: box-shadow .2s ease-in, -webkit-box-shadow .2s ease-in;
+}
+
+main .section-project {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+main .section-project .card-grid img {
+  padding: 10px;
+}
+
+main .section-project .card-test div {
+  position: relative;
+}
+
+main .section-project .card-test .overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: #6c63ff;
+  color: #EEE;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: left .7s;
+  transition: left .7s;
+}
+
+main .section-project .card {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 0px;
+          box-shadow: 0px 0px 0px;
+  -webkit-transition: -webkit-box-shadow .2s ease-out;
+  transition: -webkit-box-shadow .2s ease-out;
+  transition: box-shadow .2s ease-out;
+  transition: box-shadow .2s ease-out, -webkit-box-shadow .2s ease-out;
+}
+
+main .section-project .card:hover {
+  -webkit-box-shadow: 1px 8px 20px #ff6347;
+          box-shadow: 1px 8px 20px #ff6347;
+  -webkit-transition: -webkit-box-shadow .2s ease-in;
+  transition: -webkit-box-shadow .2s ease-in;
+  transition: box-shadow .2s ease-in;
+  transition: box-shadow .2s ease-in, -webkit-box-shadow .2s ease-in;
+}
+
+main .section-project .card:hover .overlay {
+  left: 0;
+}
+
+main .section-contact {
+  background: #6c63ff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+main .section-contact h2 {
+  color: #111;
+}
+
+main .section-contact button {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+main .section-contact button span {
+  font-size: 1.5em;
+}
+
+main .section-contact .insta {
+  background: #fff;
+}
+
+main .section-contact .insta a {
+  color: #e1306c;
+}
+
+main .section-contact .insta:hover {
+  background: #e1306c;
+}
+
+main .section-contact .insta:hover a {
+  color: #fff;
+}
+
+main .section-contact .fb {
+  background: #fff;
+}
+
+main .section-contact .fb a {
+  color: #3b5998;
+}
+
+main .section-contact .fb:hover {
+  background: #3b5998;
+}
+
+main .section-contact .fb:hover a {
+  color: #fff;
+}
+
+main .section-contact .twitter {
+  background: #fff;
+}
+
+main .section-contact .twitter a {
+  color: #1da1f2;
+}
+
+main .section-contact .twitter:hover {
+  background: #1da1f2;
+}
+
+main .section-contact .twitter:hover a {
+  color: #fff;
+}
+
+main .section-contact .git {
+  background: #fff;
+}
+
+main .section-contact .git a {
+  color: #333;
+}
+
+main .section-contact .git:hover {
+  background: #333;
+}
+
+main .section-contact .git:hover a {
+  color: #fff;
+}
+
+footer #sticky-footer {
+  position: absolute;
+  bottom: 0;
+}
+
+footer span {
+  color: #ff6347;
 }
 /*# sourceMappingURL=style.css.map */
