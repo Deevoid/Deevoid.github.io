@@ -134,6 +134,10 @@ header .col-text button:hover {
   border: solid 2px #111;
 }
 
+header .col-text button a, header .col-text button a:hover {
+  color: #111;
+}
+
 header .col-text h3 {
   color: #111;
 }
@@ -256,6 +260,10 @@ main .section-about .col-text button:hover {
   background: #6c63ff;
   color: #EEE;
   border: solid 2px #111;
+}
+
+main .section-about .col-text button a, main .section-about .col-text button a:hover {
+  color: #111;
 }
 
 main .section-about .col-img {

@@ -73,6 +73,9 @@ header {
                 color: $Lines;
                 border: solid 2px $Headings;
             }
+            a,a:hover{
+                color:$Headings;
+            }
         }
 
         h3 {
@@ -169,6 +172,9 @@ main {
                     background: $Primary;
                 color: $Lines;
                 border: solid 2px $Headings;
+                }
+                a,a:hover{
+                    color:$Headings;
                 }
             }
         }
