@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Title -->
+    <link rel="shortcut icon" href="/img/title.ico" />
+    <title>Rock Paper Scissor</title>
+    <!-- CSS -->
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/ce0cd09d81.js" crossorigin="anonymous"></script>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="intro text-center d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-white my-5">Rock Paper Scissor</h2>
+        <button type="button" class="my-5 btn" id="ready" onclick="ready()">Ready to Play</button>
+    </div>
+    <section class="game text-white">
+        <div class="pt-3 score d-flex justify-content-around text-white">
+            <div class="player text-center">
+                <h3 id="player-id">Player</h3>
+                <p class="">0</p>
+            </div>
+            <div class="computer text-center">
+                <h3>Computer</h3>
+                <p class="">0</p>
+            </div>
+        </div>
+        <div class="match mt-5">
+            <div class="game-img my-5 d-flex flex-center justify-content-around">
+                <img src="./img/paper.png" width="100" height="100" alt="player-img" class="player-img">
+                <img src="./img/rock.png" width="100" height="100" alt="computer-img" class="computer-img">
+            </div>
+            <h2 class="text-center my-5 winner">Try your luck</h2>
+            <div class="hit-btn d-flex justify-content-around align-items-center">
+                <button class="btn btn-primary">rock</button>
+                <button class="btn btn-primary">paper</button>
+                <button class="btn btn-primary">scissor</button>
+            </div>
+        </div>
+        <div class="reset text-center my-2">
+            <button class="btn" type="button" id="reset">Reset</button>
+        </div>
+    </section>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Made with <span><i class="fas fa-heart"></i></span> and coffee</small>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
