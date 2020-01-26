@@ -3,11 +3,8 @@ html, body{
     margin: 0;
 
 }
-.container{
-    
-}
 body{
-    background-image: url(/assets/img/header-bg2-md.jpg);
+    background-image: url(/img/bg-2.svg);
 }
 #img,#cover{
     max-width: 400px;
