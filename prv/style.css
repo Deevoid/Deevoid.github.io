@@ -19,3 +19,13 @@ form{
 main{
     flex: 1 0 auto;
 }
+
+@media (max-width: 767.98px) { 
+    .vid{
+        display: flex;
+        flex-direction: column;
+    }
+    video{
+        width: 100vw;
+    }
+ }
